@@ -1,0 +1,29 @@
+ACTIONS = ['UP', 'RIGHT', 'DOWN', 'LEFT', 'WAIT', 'BOMB']
+
+NUMBER_OF_FEATURE = 12
+
+# mini-batch
+BATCH_SIZE = 512
+TRANSITION_BUFFER_SIZE_MAX = 1024
+
+# Q-learning
+DECAY_GAMMA = 0.9
+
+# priority learning
+PRIORITY_LEARNING = True
+PRIORITY_RATIO = 0.75
+
+# n step learning
+N_STEP_LEARNING = True
+N_STEP = 5
+
+
+# epsilon greedy policy
+EPSILON_START = 0.2
+EPSILON_END = 0.01
+EPSILON_DECAY = 0.9995  # Diminishing Epsilon-Greedy
+
+# models
+TRAINING_ROUNDS=2000
+SAVE_INTERVAL = 100
+FINAL_MODEL_NAME=f"model-{TRAINING_ROUNDS}"
